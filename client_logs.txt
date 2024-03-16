@@ -43,3 +43,48 @@ Score model - Host: http://localhost:4000, Endpoint: /iris/model/6, Status: 200,
 }
 
 Model scored successfully! Result: Score done, class=1
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 6
+}
+
+Dataset uploaded successfully! Index: 6
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 7
+}
+
+Model built successfully! Index: 7
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/7, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.7124999761581421,
+      0.8843749761581421,
+      0.9322916865348816,
+      0.953125,
+      0.9677083492279053,
+      0.96875,
+      0.971875011920929,
+      0.9802083373069763,
+      0.9770833253860474,
+      0.9770833253860474
+    ],
+    "loss": [
+      0.9533737897872925,
+      0.29551729559898376,
+      0.1772075742483139,
+      0.14885841310024261,
+      0.125176802277565,
+      0.11117886006832123,
+      0.10378170758485794,
+      0.07503212988376617,
+      0.08059141784906387,
+      0.0981343537569046
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/7, Status: 200, Response: {
+  "score_result": "Score done, class=2"
+}
+
+Model scored successfully! Result: Score done, class=2
