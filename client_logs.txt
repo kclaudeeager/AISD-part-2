@@ -98,3 +98,38 @@ Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, R
 }
 
 Model built successfully! Index: 8
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/8, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.731249988079071,
+      0.9145833253860474,
+      0.9552083611488342,
+      0.9677083492279053,
+      0.9635416865348816,
+      0.971875011920929,
+      0.9708333611488342,
+      0.9822916388511658,
+      0.9739583134651184,
+      0.9833333492279053
+    ],
+    "loss": [
+      0.5674756765365601,
+      0.19769500195980072,
+      0.1164269968867302,
+      0.09058138728141785,
+      0.103061743080616,
+      0.0924404039978981,
+      0.07970737665891647,
+      0.06819925457239151,
+      0.08303744345903397,
+      0.07596030086278915
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/8, Status: 200, Response: {
+  "score_result": "Score done, class=2"
+}
+
+Model scored successfully! Result: Score done, class=2

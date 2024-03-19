@@ -263,3 +263,22 @@ INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:root:Model created successfully with index: 8
 INFO:root:Model created successfully with index: 8
 INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 19:53:46] "[35m[1mPOST /iris/model HTTP/1.1[0m" 201 -
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/8
+INFO:root:Model retraining offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\base_iris_lab1.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\base_iris_lab1.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Model retrained successfully
+INFO:root:Model retrained successfully
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 19:54:32] "PUT /iris/model/8?dataset=7 HTTP/1.1" 200 -
