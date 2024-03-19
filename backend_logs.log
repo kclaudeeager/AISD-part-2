@@ -282,3 +282,14 @@ INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:root:Model retrained successfully
 INFO:root:Model retrained successfully
 INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 19:54:32] "PUT /iris/model/8?dataset=7 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/8
+INFO:root:Model scoring offloaded to a separate thread
+INFO:root:Model scored successfully
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 19:54:58] "GET /iris/model/8?fields=1000,1,8.5,5.3,16,24,45.25,384,1.6,0.67,0.53,0.22,-7.5,-18.7,0.2,100,200,6.7,19.6,0.12 HTTP/1.1" 200 -
