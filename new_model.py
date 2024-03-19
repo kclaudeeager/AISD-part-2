@@ -130,7 +130,9 @@ def score(model_ID, features):
     model = models[model_ID]
 
     x_test2 = [features]  # Adjusted to handle a list of input features
-
+    print("Type of x_test2: ", type(x_test2))
+    # print the dimensions of the input
+    print("Shape of x_test2: ", np.array(x_test2).shape)
     y_pred2 = model.predict(x_test2)
     print(y_pred2)
     iris_class = np.argmax(y_pred2, axis=1)[0]

@@ -88,3 +88,13 @@ Score model - Host: http://localhost:4000, Endpoint: /iris/model/7, Status: 200,
 }
 
 Model scored successfully! Result: Score done, class=2
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 7
+}
+
+Dataset uploaded successfully! Index: 7
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 8
+}
+
+Model built successfully! Index: 8
