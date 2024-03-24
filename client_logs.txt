@@ -133,3 +133,331 @@ Score model - Host: http://localhost:4000, Endpoint: /iris/model/8, Status: 200,
 }
 
 Model scored successfully! Result: Score done, class=2
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 8
+}
+
+Dataset uploaded successfully! Index: 8
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 9
+}
+
+Model built successfully! Index: 9
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/9, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.5979166626930237,
+      0.8479166626930237,
+      0.918749988079071,
+      0.9437500238418579,
+      0.9604166746139526,
+      0.9624999761581421,
+      0.965624988079071,
+      0.9677083492279053,
+      0.965624988079071,
+      0.9708333611488342
+    ],
+    "loss": [
+      1.2754145860671997,
+      0.3877245783805847,
+      0.23684459924697876,
+      0.15432405471801758,
+      0.14624518156051636,
+      0.11574054509401321,
+      0.13066978752613068,
+      0.1291247457265854,
+      0.12231273204088211,
+      0.10126486420631409
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/9, Status: 200, Response: {
+  "score_result": "Score done, class=1"
+}
+
+Model scored successfully! Result: Score done, class=1
+Test model - Host: http://localhost:4000, Endpoint: /iris/model/2/test, Status: 200, Response: {
+  "test_result": {
+    "accuracy": 0.3375000059604645,
+    "confusion_matrix": [
+      [
+        5,
+        395,
+        0
+      ],
+      [
+        0,
+        400,
+        0
+      ],
+      [
+        0,
+        400,
+        0
+      ]
+    ],
+    "dataset_id": 3,
+    "loss": 26.894977569580078,
+    "model_id": 2,
+    "precision": [
+      1.0,
+      0.33472803347280333,
+      0.0
+    ],
+    "recall": [
+      0.0125,
+      1.0,
+      0.0
+    ]
+  }
+}
+
+Model tested successfully!
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 2
+}
+
+Dataset uploaded successfully! Index: 2
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 12
+}
+
+Model built successfully! Index: 12
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/12, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.824999988079071,
+      0.9593750238418579,
+      0.9635416865348816,
+      0.9677083492279053,
+      0.9697916507720947,
+      0.9708333611488342,
+      0.9708333611488342,
+      0.9729166626930237,
+      0.971875011920929,
+      0.9739583134651184
+    ],
+    "loss": [
+      0.5738133192062378,
+      0.11915457248687744,
+      0.1122293695807457,
+      0.13769443333148956,
+      0.08208329975605011,
+      0.10452038794755936,
+      0.10120774060487747,
+      0.08592187613248825,
+      0.12111034244298935,
+      0.11072605103254318
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/12, Status: 200, Response: {
+  "score_result": "Score done, class=1"
+}
+
+Model scored successfully! Result: Score done, class=1
+Test model - Host: http://localhost:4000, Endpoint: /iris/model/11/test, Status: 200, Response: {
+  "test_result": {
+    "accuracy": 0.4482758641242981,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        9
+      ],
+      [
+        0,
+        0,
+        13
+      ]
+    ],
+    "dataset_id": 0,
+    "loss": 22.411958694458008,
+    "model_id": 11,
+    "precision": [
+      0.0,
+      0.0,
+      0.4482758620689655
+    ],
+    "recall": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}
+
+Model tested successfully!
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 3
+}
+
+Dataset uploaded successfully! Index: 3
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 1
+}
+
+Model built successfully! Index: 1
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/1, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.971875011920929,
+      0.9708333611488342,
+      0.965624988079071,
+      0.9697916507720947,
+      0.9708333611488342,
+      0.9822916388511658,
+      0.965624988079071,
+      0.9781249761581421,
+      0.9739583134651184,
+      0.9697916507720947
+    ],
+    "loss": [
+      0.14129099249839783,
+      0.13605716824531555,
+      0.09712275117635727,
+      0.11213261634111404,
+      0.14211951196193695,
+      0.09951701760292053,
+      0.18515683710575104,
+      0.07215902954339981,
+      0.09579048305749893,
+      0.1650267392396927
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/1, Status: 200, Response: {
+  "score_result": "Score done, class=2"
+}
+
+Model scored successfully! Result: Score done, class=2
+Test model - Host: http://localhost:4000, Endpoint: /iris/model/1/test, Status: 200, Response: {
+  "test_result": {
+    "accuracy": 0.9655172228813171,
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        1
+      ],
+      [
+        0,
+        0,
+        13
+      ]
+    ],
+    "dataset_id": 0,
+    "loss": 0.03646504506468773,
+    "model_id": 1,
+    "precision": [
+      1.0,
+      1.0,
+      0.9285714285714286
+    ],
+    "recall": [
+      1.0,
+      0.8888888888888888,
+      1.0
+    ]
+  }
+}
+
+Model tested successfully!
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 5
+}
+
+Dataset uploaded successfully! Index: 5
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 1
+}
+
+Model built successfully! Index: 1
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/1, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.9802083373069763,
+      0.9760416746139526,
+      0.9770833253860474,
+      0.9833333492279053,
+      0.984375,
+      0.9822916388511658,
+      0.9833333492279053,
+      0.9739583134651184,
+      0.9833333492279053,
+      0.9833333492279053
+    ],
+    "loss": [
+      0.0972469300031662,
+      0.09248244762420654,
+      0.09785418212413788,
+      0.06130633130669594,
+      0.09949112683534622,
+      0.07012955844402313,
+      0.06475761532783508,
+      0.12094095349311829,
+      0.07349236309528351,
+      0.10548169165849686
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/1, Status: 200, Response: {
+  "score_result": "Score done, class=2"
+}
+
+Model scored successfully! Result: Score done, class=2
+Test model - Host: http://localhost:4000, Endpoint: /iris/model/0/test, Status: 200, Response: {
+  "test_result": {
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        12
+      ]
+    ],
+    "dataset_id": 4,
+    "loss": 0.0001550526503706351,
+    "model_id": 0,
+    "precision": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "recall": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}
+
+Model tested successfully!

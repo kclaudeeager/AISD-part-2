@@ -12,7 +12,7 @@ import pandas as pd
 import numpy as np
 from flask_cors import CORS
 from concurrent.futures import ThreadPoolExecutor
-from new_model import new_model, score,update_dataset,train,models,datasets,score
+from new_model import new_model, score,update_dataset,train,models,datasets,score,test
 import logging
 app = Flask(__name__)
 CORS(app)
@@ -40,6 +40,8 @@ def iris():
             logging.error('Invalid CSV data')
             abort(400, 'Invalid CSV data')
         # Add the DataFrame to the datasets list
+        # Shuffle the dataset
+        train_df = train_df.sample(frac=1).reset_index(drop=True)
         current_datasets.append(train_df)
         update_dataset(current_datasets)
         # Return the index of the created dataset
@@ -61,7 +63,12 @@ def uploadiris():
         filename = secure_filename(train.filename)
         train.save(os.path.join(UPLOAD_FOLDER, filename))
         # Add the filename to the datasets list
-        current_datasets.append(filename)
+        # Get csv data from file
+        train_df = pd.read_csv(os.path.join(UPLOAD_FOLDER, filename))
+        # Shuffle the DataFrame
+        train_df = train_df.sample(frac=1).reset_index(drop=True)
+        current_datasets.append(train_df)
+        update_dataset(current_datasets)
         # Return the index of the created dataset
         response = make_response(jsonify({"index": len(datasets) - 1}), 201)
         logging.info('Dataset uploaded successfully with index: ' + str(len(datasets) - 1))
@@ -166,6 +173,42 @@ def score_model(model_index):
     except Exception as e:
         logging.error(str(e))
         return jsonify({"error": str(e)}), 500
+
+# add test route: ris/model/<n>/test?dataset=<m>
+@app.route('/iris/model/<int:model_index>/test', methods=['GET'])
+def test_model(model_index):
+    logging.info('Request received for /iris/model/' + str(model_index) + '/test'+str(request.args))
+    try:
+        # Check if the model index is valid
+        if model_index < 0 or model_index >= len(models):
+            logging.error('Invalid model index')
+            abort(400, 'Invalid model index')
+
+        # Get the dataset index from the query parameters
+        dataset_index = request.args.get('dataset', type=int)
+        # Check if dataset_index is None
+        if dataset_index is None:
+            logging.error('No dataset index in request')
+            abort(400, 'No dataset index in request')
+
+        # Check if the dataset index is valid
+        if dataset_index < 0 or dataset_index >= len(datasets):
+            logging.error('Invalid dataset index')
+            abort(400, 'Invalid dataset index')
+        
+        # Test the model
+        # Offload model testing to a separate thread
+        logging.info('Model testing offloaded to a separate thread')
+        future = executor.submit(test, model_index, dataset_index)
+        test_result = future.result()  # This will block until the model is tested
+        logging.info('Model tested successfully')
+        # Return the test result
+        response = make_response(jsonify({"test_result": test_result}), 200)
+        return response
+    except Exception as e:
+        logging.error(str(e))
+        return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     logging.info('Starting Flask app')

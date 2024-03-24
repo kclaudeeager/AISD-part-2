@@ -81,7 +81,26 @@ def score_model(model_index, features):
         print(log_message)
         write_to_log(log_message)
         return None
-
+# Add test function
+def test_model(model_index, dataset_index):
+    try:
+        response = requests.get(f"{SERVER_URL}/iris/model/{model_index}/test?dataset={dataset_index}")
+        log_message = f"Test model - Host: {SERVER_URL}, Endpoint: /iris/model/{model_index}/test, Status: {response.status_code}, Response: {response.text}\n"
+        print(log_message)
+        write_to_log(log_message)
+        if response.status_code == 200:
+            log_message = f"Model tested successfully!\n"
+            print(log_message)
+            write_to_log(log_message)
+            return response.json()
+        else:
+            return None
+    except Exception as e:
+        log_message = f"Error testing model: {str(e)}\n"
+        print(log_message)
+        write_to_log(log_message)
+        return None
+    
 def write_to_log(message):
     with open(LOG_FILE, 'a') as f:
         f.write(message)
@@ -133,7 +152,14 @@ def main():
 
         if score_result is not None:
             print("Score:", score_result)
-
+     
+        # Test model
+            # ask user the model id and dataset id
+        model_index = int(input("Enter the model index: "))
+        dataset_index = int(input("Enter the dataset index: "))
+        test_result = test_model(model_index, dataset_index)
+        if test_result is not None:
+            print("Test result:", test_result)
     except Exception as e:
         log_message = "Error in main function: {}\n".format(e)
         print(log_message)
