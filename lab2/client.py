@@ -108,7 +108,7 @@ def write_to_log(message):
 def main():
     try:
         # Read dataset from file
-        with open('experiments/iris_extended_encoded.csv', 'r') as file:
+        with open('../lab1/experiments/iris_extended_encoded.csv', 'r') as file:
             train_data = file.read()
     
         

@@ -1,4 +1,4 @@
-from base_iris_lab1 import load_local, new_model, score
+from lab1.base_iris_lab1 import load_local, new_model, score
 
 dataset = load_local()
 print(dataset)

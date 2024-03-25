@@ -461,3 +461,86 @@ Test model - Host: http://localhost:4000, Endpoint: /iris/model/0/test, Status: 
 }
 
 Model tested successfully!
+Error in main function: [Errno 2] No such file or directory: 'experiments/iris_extended_encoded.csv'
+Upload dataset - Host: http://localhost:4000, Endpoint: /iris/datasets, Status: 201, Response: {
+  "index": 4
+}
+
+Dataset uploaded successfully! Index: 4
+Build model - Host: http://localhost:4000, Endpoint: /iris/model, Status: 201, Response: {
+  "model index": 1
+}
+
+Model built successfully! Index: 1
+Retrain model - Host: http://localhost:4000, Endpoint: /iris/model/1, Status: 200, Response: {
+  "history": {
+    "accuracy": [
+      0.9708333611488342,
+      0.9760416746139526,
+      0.9781249761581421,
+      0.9750000238418579,
+      0.9833333492279053,
+      0.9739583134651184,
+      0.981249988079071,
+      0.9781249761581421,
+      0.9770833253860474,
+      0.9739583134651184
+    ],
+    "loss": [
+      0.11079514026641846,
+      0.08958736062049866,
+      0.0767795741558075,
+      0.08790566027164459,
+      0.08881869912147522,
+      0.11324150115251541,
+      0.08712717145681381,
+      0.09015543758869171,
+      0.09092609584331512,
+      0.10093656182289124
+    ]
+  }
+}
+
+Model retrained successfully!
+Score model - Host: http://localhost:4000, Endpoint: /iris/model/1, Status: 200, Response: {
+  "score_result": "Score done, class=2"
+}
+
+Model scored successfully! Result: Score done, class=2
+Test model - Host: http://localhost:4000, Endpoint: /iris/model/1/test, Status: 200, Response: {
+  "test_result": {
+    "accuracy": 0.9891666769981384,
+    "confusion_matrix": [
+      [
+        400,
+        0,
+        0
+      ],
+      [
+        0,
+        396,
+        4
+      ],
+      [
+        0,
+        9,
+        391
+      ]
+    ],
+    "dataset_id": 1,
+    "loss": 0.030545774847269058,
+    "model_id": 1,
+    "precision": [
+      1.0,
+      0.9777777777777777,
+      0.9898734177215189
+    ],
+    "recall": [
+      1.0,
+      0.99,
+      0.9775
+    ]
+  }
+}
+
+Model tested successfully!
