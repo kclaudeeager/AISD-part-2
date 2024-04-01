@@ -1,0 +1,18 @@
+version: '3'
+services:
+  server:
+    build: 
+      context: ./lab2
+      dockerfile: Dockerfile
+    image: kclaude/iris_model_server:latest
+    ports:
+      - "4000:4000"
+    container_name: iris_model_server
+  client:
+    build: 
+      context: ./lab3
+      dockerfile: Dockerfile
+    image: kclaude/iris_model_client:latest
+    ports:
+      - "8050:8050"
+    container_name: iris_model_client
