@@ -962,3 +962,56 @@ WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\uti
 
 INFO:root:Model tested successfully
 INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 14:47:38] "GET /iris/model/2/test?dataset=1 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\threading.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\selectors.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\arrays\\masked.py', reloading

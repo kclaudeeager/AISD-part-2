@@ -156,11 +156,11 @@ html.Div([
                 children=[
                     html.Div([
                         html.Button('Re-Train', id='train-val', style={"width":"90px", "height":"30px"}),
-                        html.Div(id='container-button-train', children='')
                     ], style=col_style | {'margin-top':'20px', 'width':'90px'})
                 ]
             )
         ], style=col_style | {'margin-top':'50px', 'margin-bottom':'50px', 'width':"400px", 'border': '2px solid black'}),
+       html.Div(id='container-button-train', children='')
     ]),
     dcc.Tab(label="Score model", id="score-tab", style=tab_style, selected_style=tab_selected_style, children=[
         dcc.Loading(
@@ -318,6 +318,10 @@ def update_output_train(nclicks_train, model_index, dataset_index):
             # Create a Plotly figure
             fig = px.line(df, x=df.index, y=['loss', 'accuracy'], title='Model Training History')
 
+            # Update x and y axis labels
+            fig.update_xaxes(title_text='Epoch')
+            fig.update_yaxes(title_text='Value')
+
             # Convert the DataFrame to a DataTable
             table = dash_table.DataTable(
                 data=df.to_dict('records'),
@@ -335,7 +339,6 @@ def update_output_train(nclicks_train, model_index, dataset_index):
             return 'Error retraining model'
     else:
         return ''
-
 
 @app.callback(
 # callback annotations go here
@@ -373,6 +376,7 @@ def update_output_test(nclicks, model_index, dataset_index):
     if nclicks:
         # invoke test model endpoint
         response = requests.get(f"{SERVER_URL}/iris/model/{model_index}/test?dataset={dataset_index}", timeout=120)
+        print(response.content)
         if response.status_code == 200:
             test_result = response.json()["test_result"]
             
@@ -394,10 +398,20 @@ def update_output_test(nclicks, model_index, dataset_index):
                 'Precision': test_result['precision'],
                 'Recall': test_result['recall']
             })
+             # Melt the DataFrame to long format for plotting
+            precision_recall_melt = precision_recall_df.melt(id_vars='Class', var_name='Metric', value_name='Value')
+            # Concatenate the summary and precision_recall DataFrames
+            plot_df = pd.concat([summary_df, precision_recall_melt], ignore_index=True)
+            # Create a Plotly figure
+            fig = px.bar(plot_df, x='Metric', y='Value', color='Class', barmode='group', title='Model Evaluation Metrics')
 
             # Create a DataFrame for confusion matrix
             confusion_matrix_df = pd.DataFrame(test_result['confusion_matrix'], index=['Class 1', 'Class 2', 'Class 3'], columns=['Class 1', 'Class 2', 'Class 3'])
             
+            # create a plotly figure for confusion matrix
+            fig_confusion_matrix = px.imshow(confusion_matrix_df, labels=dict(x='Predicted Label', y='True Label', color='Count'), title='Confusion Matrix')
+            fig_confusion_matrix.update_xaxes(side='top')
+
             # Convert DataFrames to DataTables
             summary_table = dash_table.DataTable(
                 data=summary_df.to_dict('records'),
@@ -425,11 +439,18 @@ def update_output_test(nclicks, model_index, dataset_index):
 
             # Return the tables and the title
             return dbc.Container([
+                
                 dbc.Row([
                     dbc.Col(html.H2("Model Evaluation Results", style={'text-align': 'center'}), width=12)
                 ]),
                 dbc.Row([
                     dbc.Col(html.H3(f"Model ID: {model_id}, Dataset ID: {dataset_id}", style={'text-align': 'center'}), width=12)
+                ]),
+                dbc.Row([
+                   dbc.Col(dcc.Graph(figure=fig_confusion_matrix), width=12)
+                ]),
+                dbc.Row([
+                     dbc.Col(dcc.Graph(figure=fig), width=12)
                 ]),
                 dbc.Row([
                     dbc.Col(html.H4("Summary", style={'text-align': 'center'}), width=12),
