@@ -10,7 +10,7 @@ from dash import Dash, html, dcc
 from dash import Dash, dcc, html, Input, Output, State
 from dash import Dash, dash_table
 import dash_bootstrap_components as dbc
-
+from dash import html
 SERVER_URL = 'http://localhost:4000'
 tabs_styles = {
     'height': '44px'
@@ -36,10 +36,14 @@ import plotly.express as px
 import pandas as pd
 
 import requests
+import os
 
 app = Dash(__name__)
 
-df = pd.read_csv("experiments/iris_extended_encoded.csv",sep=',')
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.realpath(__file__))
+file_path = os.path.join(current_dir, 'experiments', 'iris_extended_encoded.csv')
+df = pd.read_csv(file_path,sep=',')
 df_csv = df.to_csv(index=False)
 
 app.layout = html.Div(children=[
@@ -155,8 +159,7 @@ html.Div([
                         html.Div(id='container-button-train', children='')
                     ], style=col_style | {'margin-top':'20px', 'width':'90px'})
                 ]
-            ),
-
+            )
         ], style=col_style | {'margin-top':'50px', 'margin-bottom':'50px', 'width':"400px", 'border': '2px solid black'}),
     ]),
     dcc.Tab(label="Score model", id="score-tab", style=tab_style, selected_style=tab_selected_style, children=[
@@ -297,7 +300,6 @@ def update_output_build(nclicks_build, dataset_index):
     Input('dataset-for-train', 'value')
 )
 
-
 def update_output_train(nclicks_train, model_index, dataset_index):
     if nclicks_train and model_index and dataset_index:
         try:
@@ -312,6 +314,10 @@ def update_output_train(nclicks_train, model_index, dataset_index):
             history = response.json()['history']
             # Convert the dictionary to a DataFrame
             df = pd.DataFrame(history)
+
+            # Create a Plotly figure
+            fig = px.line(df, x=df.index, y=['loss', 'accuracy'], title='Model Training History')
+
             # Convert the DataFrame to a DataTable
             table = dash_table.DataTable(
                 data=df.to_dict('records'),
@@ -319,12 +325,16 @@ def update_output_train(nclicks_train, model_index, dataset_index):
                 style_table={'margin': '10px', 'padding': '10px'},
                 style_cell={'margin': '2px', 'padding': '1px'}
             )
-            return table
+
+            # Wrap the table and the figure in a Div and return it
+            return html.Div([
+                table,
+                dcc.Graph(figure=fig)
+            ])
         else:
             return 'Error retraining model'
     else:
         return ''
-    
 
 
 @app.callback(
