@@ -155,8 +155,6 @@ def score(model_ID, features):
 
     return "Score done, class=" + str(iris_class)
 
-
-
 def test(model_id, dataset_id):
     global models, datasets, metrics
     print("Dataset length: ", len(datasets))
@@ -203,8 +201,19 @@ def test(model_id, dataset_id):
     print('Recall Score on test data is {}'.format(recall))
     
     # Save the metrics in a dictionary and append it to the metrics list
-    test_results = {"model_id": model_id, "dataset_id": dataset_id, "loss": loss, "accuracy": accuracy, "confusion_matrix": conf_matrix.tolist(), "precision": precision.tolist(), "recall": recall.tolist()}
-    # Check if the test results were already saved considering model_id and dataset_id
+    test_results = {
+        "model_id": model_id,
+        "dataset_id": dataset_id,
+        "loss": loss,
+        "accuracy": accuracy,
+        "confusion_matrix": conf_matrix.tolist(),
+        "precision": precision.tolist(),
+        "recall": recall.tolist(),
+        "actual_classes": actual.tolist(),  # Add actual classes to the dictionary
+        "predicted_classes": predicted.tolist()  # Add predicted classes to the dictionary
+    }
+
+    print("Test results gotten: ", test_results)
     for i, metric in enumerate(metrics):
         if metric["model_id"] == model_id and metric["dataset_id"] == dataset_id:
             metrics[i] = test_results  # Update the test results

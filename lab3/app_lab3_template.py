@@ -3,6 +3,8 @@
 
 #Include . paths
 import sys
+
+import numpy as np
 sys.path.append('./')
 sys.path.append('../')
 
@@ -10,6 +12,8 @@ from dash import Dash, html, dcc
 from dash import Dash, dcc, html, Input, Output, State
 from dash import Dash, dash_table
 import dash_bootstrap_components as dbc
+import plotly.graph_objects as go
+            
 from dash import html
 SERVER_URL = 'http://localhost:4000'
 tabs_styles = {
@@ -376,7 +380,7 @@ def update_output_test(nclicks, model_index, dataset_index):
     if nclicks:
         # invoke test model endpoint
         response = requests.get(f"{SERVER_URL}/iris/model/{model_index}/test?dataset={dataset_index}", timeout=120)
-        print(response.content)
+        #print(response.content)
         if response.status_code == 200:
             test_result = response.json()["test_result"]
             
@@ -385,8 +389,140 @@ def update_output_test(nclicks, model_index, dataset_index):
             loss = test_result['loss']
             model_id = test_result['model_id']
             dataset_id = test_result['dataset_id']
+
+            # Extract actual and predicted classes
+            actual_classes = test_result['actual_classes']
+            predicted_classes = test_result['predicted_classes']
+
+            # Create a DataFrame for actual and predicted classes
+            classes_df = pd.DataFrame({
+                'Actual Class': actual_classes,
+                'Predicted Class': predicted_classes
+            })
+
+            # Add a column for correct predictions
+            classes_df['Correct Prediction'] = classes_df['Actual Class'] == classes_df['Predicted Class']
+
+            print(classes_df)
+            # Create a Plotly figure
+        
+            # Create a density heatmap
+            fig_classes = go.Figure()
+            # fig_classes.add_trace(go.Histogram2dContour(
+            #         x=classes_df['Actual Class'],
+            #         y=classes_df['Predicted Class'],
+            #         colorscale='Blues',
+            #         reversescale=True,
+            #         xaxis='x',
+            #         yaxis='y'
+            #     ))
             
-            # Create a DataFrame for accuracy, loss, model ID, and dataset ID
+            # # Create a scatter plot for correct predictions
+            # fig_classes.add_trace(go.Scatter(
+            #         x=classes_df[classes_df['Correct Prediction'] == True]['Actual Class'],
+            #         y=classes_df[classes_df['Correct Prediction'] == True]['Predicted Class'],
+            #         xaxis='x',
+            #         yaxis='y',
+            #         mode='markers',
+            #         marker=dict(
+            #             color='Green',
+            #             size=3
+            #         ),
+            #         name='Correct'
+            #     ))
+            
+            # # Create a scatter plot for incorrect predictions
+            # fig_classes.add_trace(go.Scatter(
+            #         x=classes_df[classes_df['Correct Prediction'] == False]['Actual Class'],
+            #         y=classes_df[classes_df['Correct Prediction'] == False]['Predicted Class'],
+            #         xaxis='x',
+            #         yaxis='y',
+            #         mode='markers',
+            #         marker=dict(
+            #             color='Red',
+            #             size=3
+            #         ),
+            #         name='Incorrect'
+            #     ))
+            # Create a Plotly figure for scatter plot
+            correct_predictions = classes_df['Correct Prediction']
+            # Increase Marker Size
+            fig_classes.add_trace(go.Scatter(
+                x=np.log1p(range(len(actual_classes))),  # Apply log scale to x-axis
+                y=actual_classes,
+                mode='lines+markers',
+                marker=dict(
+                    color='blue',
+                    size=10,  # Increase marker size
+                ),
+                line=dict(width=0.5),  # Reduce line width
+                name='Actual'
+            ))
+            
+            fig_classes.add_trace(go.Scatter(
+                x=np.log1p(range(len(predicted_classes))),  # Apply log scale to x-axis
+                y=predicted_classes,
+                mode='lines+markers',
+                marker=dict(
+                    color=['green' if correct else 'red' for correct in correct_predictions],
+                    size=10,  # Increase marker size
+                ),
+                line=dict(width=0.5),  # Reduce line width
+                text=['Correct' if correct else 'Incorrect' for correct in correct_predictions],
+                name='Predictions'
+            ))
+            # Add trace for accuracy line
+            fig_classes.add_trace(go.Scatter(
+                x=[0, len(predicted_classes)],  # Start and end of line
+                y=[accuracy, accuracy],  # Constant y-value
+                mode='lines',
+                line=dict(color='black', width=1),
+                name=f'Accuracy: {accuracy:.2f}'
+            ))
+            
+          
+            # Reduce Marker Opacity
+            fig_classes.update_traces(marker_opacity=0.5)  # Reduce marker opacity
+            
+            # Update x-axis to log scale
+            fig_classes.update_layout(
+                title='Predicted Classes vs Row Index',
+                xaxis=dict(
+                    type='log',
+                    title='Log Scale Index'
+                ),
+                 yaxis=dict(title='Classes'),
+            )
+
+            # fig_classes.add_trace(go.Scatter(
+            #     x=list(range(len(predicted_classes))),  # Each row represented as a point on the x-axis
+            #     y=[cls + 0.1 for cls, correct in zip(predicted_classes, correct_predictions) if correct],  # Slightly displaced to the right for correct predictions
+            #     mode='markers',
+            #     marker=dict(
+            #         color='green',
+            #         size=6
+            #     ),
+            #     name='Correct Predictions'
+            # ))
+
+            # fig_classes.add_trace(go.Scatter(
+            #     x=list(range(len(predicted_classes))),  # Each row represented as a point on the x-axis
+            #     y=[cls - 0.1 for cls, correct in zip(predicted_classes, correct_predictions) if not correct],  # Slightly displaced to the left for incorrect predictions
+            #     mode='markers',
+            #     marker=dict(
+            #         color='red',
+            #         size=6
+            #     ),
+            #     name='Incorrect Predictions'
+            # ))
+
+            # fig_classes.update_layout(
+            #     title='Predicted Classes vs Row Index',
+            #     xaxis=dict(title='Row Index'),
+            #     yaxis=dict(title='Classes'),
+            # )
+
+
             summary_df = pd.DataFrame({
                 'Metric': ['Model ID', 'Dataset ID', 'Accuracy', 'Loss'],
                 'Value': [model_id, dataset_id, accuracy, loss]
@@ -445,6 +581,9 @@ def update_output_test(nclicks, model_index, dataset_index):
                 ]),
                 dbc.Row([
                     dbc.Col(html.H3(f"Model ID: {model_id}, Dataset ID: {dataset_id}", style={'text-align': 'center'}), width=12)
+                ]),
+                dbc.Row([
+                    dbc.Col(dcc.Graph(figure=fig_classes), width=12)
                 ]),
                 dbc.Row([
                    dbc.Col(dcc.Graph(figure=fig_confusion_matrix), width=12)

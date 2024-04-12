@@ -1015,3 +1015,603 @@ INFO:root:Starting Flask app
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 899-513-937
 INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\arrays\\masked.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\new_model.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.29.104.235:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Starting Flask app
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://192.168.1.69:4000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\keras\\src\\engine\\training.py', reloading
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:09:20] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileuj2y6mwp.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileuj2y6mwp.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:10:47] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\plotly\\express\\_chart_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\plotly\\express\\_core.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filez9lmr7uj.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filez9lmr7uj.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:11:03] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Scripts\\conda-script.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filesm53t_t4.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filesm53t_t4.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:19:13] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:24:48] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:25:54] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:28:58] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\ops\\common.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\arraylike.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\series.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\base.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\ops\\array_ops.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\pandas\\core\\roperator.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file9ah6xagc.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file9ah6xagc.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file4bhitcem.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file4bhitcem.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:30:41] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/2/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filemqdi4vzq.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filemqdi4vzq.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:33:14] "GET /iris/model/2/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model
+INFO:root:Model creation offloaded to a separate thread
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\saved_model\\signature_serialization.py', reloading
+INFO:tensorflow:Assets written to: model_7\assets
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:tensorflow:Assets written to: model_7\assets
+INFO:root:Model created successfully with index: 7
+INFO:root:Model created successfully with index: 7
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:36:11] "[35m[1mPOST /iris/model HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model
+INFO:root:Model creation offloaded to a separate thread
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file0cu3bfwj.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file0cu3bfwj.py', reloading
+INFO:tensorflow:Assets written to: model_8\assets
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:tensorflow:Assets written to: model_8\assets
+INFO:root:Model created successfully with index: 8
+INFO:root:Model created successfully with index: 8
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:38:21] "[35m[1mPOST /iris/model HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model
+INFO:root:Model creation offloaded to a separate thread
+INFO:tensorflow:Assets written to: model_9\assets
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file20eaoz7p.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file20eaoz7p.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filemum55dg_.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filemum55dg_.py', reloading
+INFO:tensorflow:Assets written to: model_9\assets
+INFO:root:Model created successfully with index: 9
+INFO:root:Model created successfully with index: 9
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:38:46] "[35m[1mPOST /iris/model HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file3y6islnb.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file3y6islnb.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file8db569cf.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file8db569cf.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:40:03] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file9wnoiuhe.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file9wnoiuhe.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:45:36] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:45:52] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:46:20] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:47:15] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:51:57] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:52:55] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 08:56:04] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\iris_updated_model_flask.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file5cdov1jy.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file5cdov1jy.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:07:34] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file4s3ljyla.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file4s3ljyla.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:07:58] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\keras\\src\\engine\\training.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\keras\\src\\engine\\compile_utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\autograph\\impl\\api.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\autograph_util.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\polymorphic_function.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\framework\\func_graph.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\tracing_compilation.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\util\\traceback_utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\concurrent\\futures\\thread.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\threading.py', reloading
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:15:09] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file5md7tq7t.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file5md7tq7t.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filez5nt3d9m.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filez5nt3d9m.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:15:48] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileiqjowj7t.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileiqjowj7t.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileiqjowj7t.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:45:27] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filef3s5zcss.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filef3s5zcss.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:58:21] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filegmpmwr4x.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filedbi63uri.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filedbi63uri.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 09:59:41] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filewh8x7rnn.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filewh8x7rnn.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:04:36] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file_fsavic_.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file_fsavic_.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:06:36] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file9_2p9t2b.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_file9_2p9t2b.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:07:41] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filenu7jetm4.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filenu7jetm4.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:11:53] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileyai5mn_w.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_fileyai5mn_w.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:12:28] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\keras\\src\\engine\\training.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\keras\\src\\engine\\compile_utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\autograph\\impl\\api.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\autograph_util.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\polymorphic_function.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\framework\\func_graph.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\tracing_compilation.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\site-packages\\tensorflow\\python\\util\\traceback_utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\concurrent\\futures\\thread.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\anaconda3\\Lib\\threading.py', reloading
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:19:42] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:20:11] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:23:23] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:28:44] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:33:02] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:34:34] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:40:13] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:43:15] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:44:27] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:48:16] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:49:27] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:54:30] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:56:09] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:59:09] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 10:59:36] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:00:25] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:01:49] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:03:20] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:04:29] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:05:43] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\claude\\Documents\\CMU\\Year 1\\Sem2\\AI System Design\\Part 2\\HW1\\lab2\\iris_updated_model_flask.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filex4vddjbl.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filex4vddjbl.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:08:26] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Starting Flask app
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 899-513-937
+INFO:root:Request received for /iris/model/9/testImmutableMultiDict([('dataset', '0')])
+INFO:root:Model testing offloaded to a separate thread
+WARNING:tensorflow:From C:\Users\robot\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\robot\\AppData\\Local\\Temp\\__autograph_generated_filemzn0h3vx.py', reloading
+INFO:root:Model tested successfully
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 11:09:13] "GET /iris/model/9/test?dataset=0 HTTP/1.1" 200 -
