@@ -2,6 +2,7 @@
 # visit http://127.0.0.1:8050/ in your web browser.
 
 #Include . paths
+import io
 import sys
 
 import numpy as np
@@ -11,8 +12,10 @@ sys.path.append('../')
 from dash import Dash, html, dcc
 from dash import Dash, dcc, html, Input, Output, State
 from dash import Dash, dash_table
+import dash
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
+from dash.exceptions import PreventUpdate
             
 from dash import html
 SERVER_URL = 'http://localhost:4000'
@@ -52,6 +55,7 @@ df_csv = df.to_csv(index=False)
 
 app.layout = html.Div(children=[
     html.H1(children='Iris classifier'),
+
     dcc.Tabs([
     dcc.Tab(label="Explore Iris training data", style=tab_style, selected_style=tab_selected_style, children=[
 
@@ -64,7 +68,9 @@ app.layout = html.Div(children=[
                 type="circle",
                 children=[html.Div([
                 html.Button('Load', id='load-val', style={"width":"60px", "height":"30px"}),
-                html.Div(id='load-response', children='Click to load')
+                html.Div(id='load-response', children='Click to load'),
+                html.Div(id='hidden-div', style={'display':'none'}),
+                dcc.Store(id='load-done', data=False)
                 ], style=col_style)
             ])
         ], style=col_style),
@@ -215,29 +221,40 @@ html.Div([
         html.Div(id='container-button-test', children='')
     ])
     ])
-
+   
     ])
 ])
+
 
 # callbacks for Explore data tab
 
 
+
 @app.callback(
-# callback annotations go here
-        Output(component_id='load-response', component_property='children'),
-         [Input(component_id='load-val', component_property='n_clicks'),
-     Input(component_id='file-for-train', component_property='value')]
+    Output('load-response', 'children'),
+    Output('hidden-div', 'children'),
+    Output('load-done', 'data'),
+    [Input('load-val', 'n_clicks'),
+     Input('file-for-train', 'value')]
 )
 def update_output_load(nclicks, input_filename):
     global df, df_csv
 
-    if nclicks != None:
+    ctx = dash.callback_context
+
+    if not ctx.triggered:
+        raise PreventUpdate
+    else:
+        button_id = ctx.triggered[0]['prop_id'].split('.')[0]
+
+    if button_id == 'load-val' and nclicks is not None and input_filename is not None:
         # load local data given input filename
         df = pd.read_csv(input_filename,sep=',')
         df_csv = df.to_csv(index=False)
-        return 'Load done.'
+        json_data = df.to_json(orient='split')  # Convert df to JSON
+        return 'Load done.', json_data, True
     else:
-        return ''
+        raise PreventUpdate
     
 @app.callback(
 # callback annotations go here
@@ -610,49 +627,58 @@ def update_output_test(nclicks, model_index, dataset_index):
         return ''
 
 
-    
 
-    
 @app.callback(
-    Output(component_id='indicator-graphic', component_property='figure'),
-    [Input(component_id='xaxis-column', component_property='value'),
-     Input(component_id='yaxis-column', component_property='value')]
+    Output('indicator-graphic', 'figure'),
+    [Input('hidden-div', 'children'),
+     Input('xaxis-column', 'value'),
+     Input('yaxis-column', 'value')]
 )
-def update_graph(xaxis_column_name, yaxis_column_name):
-    global df, df_csv
-    # Check if the selected column names exist in the DataFrame
+def update_graph(json_data, xaxis_column_name, yaxis_column_name):
+    # Load data from hidden div and update graph based on selected columns
+    
+    if json_data is None:
+       global df
+    else:
+        df = pd.read_json(io.StringIO(json_data), orient='split')   # Load df from json_data
     if xaxis_column_name in df.columns and yaxis_column_name in df.columns:
-        # Use the selected column names to create the scatter plot
         fig = px.scatter(x=df[xaxis_column_name], y=df[yaxis_column_name])
         fig.update_layout(margin={'l': 40, 'b': 40, 't': 10, 'r': 0}, hovermode='closest')
         fig.update_xaxes(title=xaxis_column_name)
         fig.update_yaxes(title=yaxis_column_name)
         return fig
     else:
-        # If the selected columns do not exist, return an empty figure
         return px.scatter()
-
 
 @app.callback(
     Output('selected_hist', 'figure'),
-    [Input('hist-column', 'value')]
+    [Input('hidden-div', 'children'), Input('hist-column', 'value')]
 )
-def update_hist(hist_column_name):
-    global df, df_csv
-    if hist_column_name not in df.columns:
-        # Return an empty histogram figure
-        empty_df = pd.DataFrame({'empty_column': []})
-        return px.histogram(empty_df, x='empty_column')
-        
-    # Create the histogram figure using the selected column
-    fig = px.histogram(df, x=df[hist_column_name])
-
-    fig.update_layout(margin={'l': 40, 'b': 40, 't': 10, 'r': 0}, hovermode='closest')
-    fig.update_xaxes(title=hist_column_name)
-
-    return fig
 
 
+def update_graph(json_data, selected_column):
+    # Load data from hidden div and update graph based on selected column
+    # Check if I am able to get the json data
+
+    if json_data is None:
+        global df
+    else:
+        df = pd.read_json(io.StringIO(json_data), orient='split')  # Load df from json_data
+
+    figure = go.Figure(data=[go.Histogram(x=df[selected_column])])
+    return figure 
+
+@app.callback(
+    Output('datatable', 'data'),
+    [Input('hidden-div', 'children')]
+)
+def update_table(json_data):
+    # Load data from hidden div and update table
+    if json_data is None:
+        global df
+    else:
+        df = pd.read_json(io.StringIO(json_data), orient='split')
+    return df.to_dict('records')
 
 if __name__ == '__main__':
     app.run_server(debug=True)
